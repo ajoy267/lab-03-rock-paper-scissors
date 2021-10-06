@@ -9,11 +9,35 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors</title>
 </head>
 
 <body>
-    
+    <header>
+        <h1 class="title">Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+        <label>
+            <input type="radio" name="game-choice" id="rock" value="rock">
+            <img src="./assets/rock-image.jpeg" alt="rock image">
+        </label>
+        <label>
+            <input type="radio" name="game-choice" id="paper" value="paper">
+            <img src="./assets/paper-image.png" alt="paper image">
+        </label>
+        <label>
+            <input type="radio" name="game-choice" id="scissors" value="scissors">
+            <img src="./assets/scissors-image.png" alt="scissors image">
+        </label>
+    </main>
+    <footer>
+        <p id="error" class="hidden">You need to choose Rock, Paper, or Scissors</p>
+        <button id="play">Play</button>
+        <p id="results"></p>
+        <p>You have won <span id="wins">0</span> times</p>
+        <p>You have lost <span id="losses">0</span> times</p>
+        <p>You have tied <span id="ties">0</span> times</p>
+    </footer>
     <script type="module" src="./app.js"></script>
 </body>
 

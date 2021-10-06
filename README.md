@@ -1,5 +1,33 @@
 # Alchemy Bootstrap Template
 
+## Rock Paper Scissors
+
+### What HTML Elements needed
+* 3 radio buttons
+* button to submit
+* text field to display results 
+* text field to displays Wins/Loses
+* text field to display total games played
+
+### What State do I need
+* User Choice
+* Wins/Loses
+* random rock paper scissors generator
+
+### What am I trying to do
+* I'm trying to have the user pick between rock, paper, or scissors
+* click the submit button
+    * have the app generate a random rock paper scissors choice
+    * compare the user pick to the random choice and determine which one won
+    * tally either a win or loss and total games (win + loss)
+    * output whether the user won or loss
+
+
+
+
+
+
+
 ## Making a plan
 
 (bolded steps are mandatory, unbolded are for more advanced projects)

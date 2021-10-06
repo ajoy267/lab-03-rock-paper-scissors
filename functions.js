@@ -1,15 +1,12 @@
 export function didUserWin(userChoice, compChoice) {
-    if (userChoice === compChoice) {
-        return 'tie';
-    } 
     if (userChoice === 'rock' && compChoice === 'scissors') {
-        return 'win';
+        return true;
     } else if (userChoice === 'paper' && compChoice === 'rock') {
-        return 'win';
+        return true;
     } else if (userChoice === 'scissors' && compChoice === 'paper') {
-        return 'win';
+        return true;
     } else {
-        return 'lose';
+        return false;
     }
 }
 

@@ -8,7 +8,7 @@ const test = QUnit.test;
 test('user: rock, comp: scissors', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 'win';
+    const expected = true;
     
     //Act 
     // Call the function you're testing and set the result to a const
@@ -20,7 +20,7 @@ test('user: rock, comp: scissors', (expect) => {
 });
 
 test('user: paper, comp: rock', (expect) => {
-    const expected = 'win';
+    const expected = true;
     
     const actual = didUserWin('paper', 'rock');
 
@@ -28,39 +28,15 @@ test('user: paper, comp: rock', (expect) => {
 });
 
 test('user: scissors, comp: paper', (expect) => {
-    const expected = 'win';
+    const expected = true;
     
     const actual = didUserWin('scissors', 'paper');
 
     expect.equal(actual, expected);
 });
 
-test('user: rock, comp: rock', (expect) => {
-    const expected = 'tie';
-    
-    const actual = didUserWin('rock', 'rock');
-
-    expect.equal(actual, expected);
-});
-
-test('user: paper, comp: paper', (expect) => {
-    const expected = 'tie';
-    
-    const actual = didUserWin('paper', 'paper');
-
-    expect.equal(actual, expected);
-});
-
-test('user: scissors, comp: scissors', (expect) => {
-    const expected = 'tie';
-    
-    const actual = didUserWin('scissors', 'scissors');
-
-    expect.equal(actual, expected);
-});
-
 test('user: paper, comp: scissors', (expect) => {
-    const expected = 'lose';
+    const expected = false;
     
     const actual = didUserWin('paper', 'scissors');
 
@@ -68,7 +44,7 @@ test('user: paper, comp: scissors', (expect) => {
 });
 
 test('user: rock, comp: paper', (expect) => {
-    const expected = 'lose';
+    const expected = false;
     
     const actual = didUserWin('rock', 'paper');
 
@@ -76,7 +52,7 @@ test('user: rock, comp: paper', (expect) => {
 });
 
 test('user: scissors, comp: rock', (expect) => {
-    const expected = 'lose';
+    const expected = false;
     
     const actual = didUserWin('scissors', 'rock');
 

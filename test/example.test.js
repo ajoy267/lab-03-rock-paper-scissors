@@ -58,3 +58,27 @@ test('user: scissors, comp: rock', (expect) => {
 
     expect.equal(actual, expected);
 });
+
+test('user: scissors, comp: scissors', (expect) => {
+    const expected = 'tie';
+    
+    const actual = didUserWin('scissors', 'scissors');
+
+    expect.equal(actual, expected);
+});
+
+test('user: rock, comp: rock', (expect) => {
+    const expected = 'tie';
+    
+    const actual = didUserWin('rock', 'rock');
+
+    expect.equal(actual, expected);
+});
+
+test('user: paper, comp: paper', (expect) => {
+    const expected = 'tie';
+    
+    const actual = didUserWin('paper', 'paper');
+
+    expect.equal(actual, expected);
+});

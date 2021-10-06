@@ -5,6 +5,8 @@ export function didUserWin(userChoice, compChoice) {
         return true;
     } else if (userChoice === 'scissors' && compChoice === 'paper') {
         return true;
+    } else if (userChoice === compChoice) {
+        return 'tie';
     } else {
         return false;
     }

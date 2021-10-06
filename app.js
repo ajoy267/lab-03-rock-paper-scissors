@@ -13,7 +13,7 @@ let losses = 0;
 // set event listeners 
 playButton.addEventListener('click', () => {
     const selectedChoice = document.querySelector('input[type=radio]:checked');
-    
+
     if (!selectedChoice) {
         return error.classList.remove('hidden');
     }
@@ -22,7 +22,7 @@ playButton.addEventListener('click', () => {
 
     const userChoice = selectedChoice.value;
     const compChoice = randomChoice();
-
+    console.log(compChoice);
     if (userChoice === compChoice) {
         ties ++;
     } else if (didUserWin(userChoice, compChoice)) {

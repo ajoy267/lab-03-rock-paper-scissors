@@ -6,7 +6,7 @@
 header {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #8338ec;
 }
 
@@ -61,6 +61,10 @@ label {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+}
+
+#results {
+    font-size: 2rem;
 }
 
 .hidden {

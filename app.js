@@ -6,6 +6,7 @@ const winSpan = document.getElementById('wins');
 const lossSpan = document.getElementById('losses');
 const tieSpan = document.getElementById('ties');
 const error = document.getElementById('error');
+const results = document.getElementById('results');
 
 let ties = 0;
 let wins = 0;
@@ -25,10 +26,13 @@ playButton.addEventListener('click', () => {
     console.log(compChoice);
     if (userChoice === compChoice) {
         ties ++;
+        results.textContent = 'You Tied';
     } else if (didUserWin(userChoice, compChoice)) {
         wins++;
+        results.textContent = 'You Win!';
     } else {
         losses++;
+        results.textContent = 'You Lose';
     }
 
     tieSpan.textContent = ties;

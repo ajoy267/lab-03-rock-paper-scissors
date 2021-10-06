@@ -1,5 +1,5 @@
 // import functions and grab DOM elements
-
+import { didUserWin, randomChoice } from "./functions.js";
 // initialize global state
 
 // set event listeners 

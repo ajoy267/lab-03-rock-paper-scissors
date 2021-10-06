@@ -6,12 +6,12 @@
 * 3 radio buttons
 * button to submit
 * text field to display results 
-* text field to displays Wins/Loses
+* text field to displays Wins/Loses/Tie
 * text field to display total games played
 
 ### What State do I need
 * User Choice
-* Wins/Loses
+* Wins/Loses/Tie
 * random rock paper scissors generator
 
 ### What am I trying to do

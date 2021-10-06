@@ -7,10 +7,14 @@ const lossSpan = document.getElementById('losses');
 const tieSpan = document.getElementById('ties');
 const error = document.getElementById('error');
 const results = document.getElementById('results');
+const resetButton = document.getElementById('reset');
+const restartSpan = document.getElementById('restarts');
+const refreshText = document.getElementById('refresh');
 
 let ties = 0;
 let wins = 0;
 let losses = 0;
+let restarts = 0;
 // set event listeners 
 playButton.addEventListener('click', () => {
     const selectedChoice = document.querySelector('input[type=radio]:checked');
@@ -35,10 +39,22 @@ playButton.addEventListener('click', () => {
         results.textContent = 'You Lose';
     }
 
+    resetButton.classList.remove('hidden');
+    refreshText.classList.remove('hidden');
     tieSpan.textContent = ties;
     winSpan.textContent = wins;
     lossSpan.textContent = losses;
 });
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+resetButton.addEventListener('click', () => {
+    ties = 0;
+    wins = 0;
+    losses = 0;
+    tieSpan.textContent = '0';
+    winSpan.textContent = '0';
+    lossSpan.textContent = '0';
+    restarts++;
+    restartSpan.textContent = restarts;
+
+
+});
